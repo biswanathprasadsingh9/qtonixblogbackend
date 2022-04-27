@@ -1,0 +1,51 @@
+=============HEROKU=============
+email:biswanath.qtonix@gmail.com
+
+
+Install the Heroku CLI
+Download and install the Heroku CLI.
+
+If you haven't already, log in to your Heroku account and follow the prompts to create a new SSH public key.
+
+$ heroku login
+Create a new Git repository
+Initialize a git repository in a new or existing directory
+
+$ cd my-project/
+$ git init
+$ heroku git:remote -a qtonixblog
+Deploy your application
+Commit your code to the repository and deploy it to Heroku using Git.
+
+$ git add .
+$ git commit -am "make it better"
+$ git push heroku master
+You can now change your main deploy branch from "master" to "main" for both manual and automatic deploys, please follow the instructions here.
+Existing Git repository
+For existing repositories, simply add the heroku remote
+
+$ heroku git:remote -a qtonixblog
+=============HEROKU=============
+
+
+=============MONGODB=============
+login as google biswanath.qtonix@gmail.com
+database- qtonixblog
+username- biswanath
+password- XRfrMdwCBrwr8lRm
+mongodb+srv://biswanath:XRfrMdwCBrwr8lRm@qtonix.t42ay.mongodb.net/qtonixblog
+=============MONGODB=============
+
+
+
+echo "# QtonixBlogBackend" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/biswanathqtonix/QtonixBlogBackend.git
+git push -u origin main
+…or push an existing repository from the command line
+git remote add origin https://github.com/biswanathqtonix/QtonixBlogBackend.git
+git branch -M main
+git push -u origin main

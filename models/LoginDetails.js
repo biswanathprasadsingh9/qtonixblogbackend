@@ -1,0 +1,90 @@
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
+
+constLoginDetailsSchema = new Schema({
+  user_email:{
+    type:String
+  },
+  ip_ip:{
+    type:String
+  },
+  ip_continent_name:{
+    type:String
+  },
+  ip_country_name:{
+    type:String
+  },
+  ip_country_code:{
+    type:String
+  },
+  ip_region:{
+    type:String
+  },
+  ip_city:{
+    type:String
+  },
+  ip_zip:{
+    type:String
+  },
+  ip_latitude:{
+    type:String
+  },
+  ip_longitude:{
+    type:String
+  },
+  ip_country_flag:{
+    type:String
+  },
+  ip_timezone:{
+    type:String
+  },
+  ip_country_calling_code:{
+    type:String
+  },
+  ip_currency:{
+    type:String
+  },
+  ip_currency_name:{
+    type:String
+  },
+  ip_languages:{
+    type:String
+  },
+  ip_country_area:{
+    type:String
+  },
+  ip_country_population:{
+    type:String
+  },
+  ip_org:{
+    type:String
+  },
+
+  osName:{
+    type:String
+  },
+  osVersion:{
+    type:String
+  },
+  mobileVendor:{
+    type:String
+  },
+  mobileModel:{
+    type:String
+  },
+  deviceType:{
+    type:String
+  },
+  browserName:{
+    type:String
+  },
+  browserVersion:{
+    type:String
+  },
+  fullBrowserVersion:{
+    type:String
+  },
+},{timestamps:true});
+
+const LoginDetails = mongoose.model('LoginDetails',constLoginDetailsSchema);
+module.exports = LoginDetails;
