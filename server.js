@@ -14,7 +14,6 @@ const RouterBlogCategory = require('./routes/blogcategory');
 const RouteMenu = require('./routes/menu');
 const RoutePage = require('./routes/page');
 const GoogleNotification = require('./routes/googlenotification');
-
 //===ROUTE INCLUDE===
 
 
@@ -27,7 +26,6 @@ mongoose.connect('mongodb+srv://mongodb:i6QpsrcM04zFhSKQ@cluster0.xeudb.mongodb.
 
 
 const db = mongoose.connection;
-
 db.on('error',(err)=>{
     console.log('Failed to connect.')
     console.log(err);
@@ -49,7 +47,7 @@ app.use(expressip().getIpInfoMiddleware);
 
 app.get('/',(req,res)=>{
     // res.send({hi:'I am biswanath'});
-    res.send('<h1>Qtonix Blog</h1>');
+    res.send('<h1>Qtonix Blog Server</h1>');
     console.log(req.ipInfo)
     // res.render('pages/home');
 });
